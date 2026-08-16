@@ -1,0 +1,22 @@
+[package]
+name = "wsx-vision"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Computer vision module — screen capture, template matching, OCR, state fusion (Kalman)"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+log = "0.4"
+thiserror = "2"
+image = "0.25"
+
+wsx-net = { path = "../net" }
+
+# Optional: OpenCV bindings (enable for real template matching)
+# opencv = { version = "0.93", optional = true }
+
+[features]
+default = []
+# opencv = ["dep:opencv"]

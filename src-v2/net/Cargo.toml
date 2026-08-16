@@ -1,0 +1,23 @@
+[package]
+name = "wsx-net"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Passive packet interception — sync player/entity state from network traffic (pcap backend)"
+
+[dependencies]
+log = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+
+# Optional libpcap bindings (Linux/macOS)
+# pcap = { version = "2", optional = true }
+
+# Optional WinPcap / npcap bindings (Windows)
+# wpcap = { version = "0.10", optional = true }
+
+[features]
+default = ["simulated"]
+simulated = []
+# real = ["pcap", "wpcap"]

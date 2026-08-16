@@ -1,0 +1,5 @@
+# Pinned toolchain → reproducible builds (D4.2)
+[toolchain]
+channel = "1.83.0"
+components = ["rustfmt", "clippy"]
+profile = "minimal"

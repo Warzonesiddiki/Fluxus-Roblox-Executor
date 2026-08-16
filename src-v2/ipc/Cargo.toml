@@ -1,0 +1,28 @@
+[package]
+name = "wsx-ipc"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Inter-Process Communication bridge — WebSocket-based code streaming"
+
+[dependencies]
+# WebSocket server for IPC with the Tauri frontend
+tokio-tungstenite = { version = "0.24", features = ["native-tls"] }
+tokio = { version = "1", features = ["full"] }
+futures-util = "0.3"
+
+# Serialization for the structured protocol
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Logging
+log = "0.4"
+
+# Error handling
+thiserror = "2"
+
+# Reference to core types
+wsx-core = { path = "../core" }
+
+# For channel-based streaming to the sandbox
+async-channel = "2"
