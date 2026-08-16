@@ -1,0 +1,23 @@
+[package]
+name = "wsx-kernel"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Kernel-level abstraction layer (Ring 0 simulation) — memory virtualization, driver lifecycle, safe EPT stubs for sandboxed research"
+
+[dependencies]
+log = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+rand = "0.8"
+
+# When targeting real hardware, the WDK toolchain + raw assembly modules
+# would be conditionally compiled behind a "hw" feature flag.
+# For the sandbox/research environment, we provide simulated stubs
+# that compile on stable Rust on any platform.
+
+[features]
+default = ["sandbox"]
+sandbox = []
+hw = []

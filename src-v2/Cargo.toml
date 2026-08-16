@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "core",
+    "ipc",
+    "vision",
+    "input",
+    "logic",
+    "driver",
+    "kernel",
+    "net",
+    "app",
+    "tests",
+    "redteam",
+]
+
+[workspace.package]
+version = "0.2.0"
+edition = "2021"
+license = "GPL-2.0"
+description = "WebSocket X v2 — full-stack automation framework: sandboxed Luau execution, CV-guided autoplay, humanized input, macro routing, packet sync, simulated kernel abstraction"
+repository = "https://github.com/Warzonesiddiki/Fluxus-Roblox-Executor"

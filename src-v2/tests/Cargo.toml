@@ -1,0 +1,22 @@
+[package]
+name = "wsx-tests"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Integration & acceptance test suite for the Apex framework"
+publish = false
+
+[dependencies]
+wsx-core = { path = "../core" }
+wsx-ipc = { path = "../ipc" }
+wsx-vision = { path = "../vision" }
+wsx-input = { path = "../input" }
+wsx-logic = { path = "../logic" }
+wsx-driver = { path = "../driver" }
+wsx-kernel = { path = "../kernel" }
+wsx-net = { path = "../net" }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+rand = "0.8"

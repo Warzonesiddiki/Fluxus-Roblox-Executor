@@ -1,0 +1,15 @@
+[package]
+name = "wsx-input"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Humanized input simulation — Bezier curves, lognormal latency, jitter, statistical validation"
+
+[dependencies]
+log = "0.4"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+
+# Hardware-level input simulation (cross-platform)
+# enigo = { version = "0.2", features = ["wayland"] }

@@ -1,0 +1,17 @@
+[package]
+name = "wsx-tauri"
+version = "0.2.0"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+wsx-ipc = { path = "../../ipc" }
+wsx-core = { path = "../../core" }
+wsx-logic = { path = "../../logic" }
+wsx-vision = { path = "../../vision" }

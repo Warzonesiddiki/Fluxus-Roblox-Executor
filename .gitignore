@@ -1,0 +1,86 @@
+# --- Visual Studio / .NET ---
+.Build/
+bin/
+obj/
+*.user
+*.suo
+*.sln.docstates
+*.userprefs
+*.vs/
+*.DotSettings
+*.csproj.user
+*.dbmdl
+*.jfm
+
+# --- NuGet ---
+packages/
+*.nupkg
+.nuget/
+
+# --- Build outputs ---
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# --- Tooling ---
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+[Rr]eport/[Rr]esult*
+[Rr]elease[Rr]esult*
+*.nunit-report
+*.trx
+*.htmlreport
+code_coverage/
+
+# --- Environment ---
+.vs/
+*.tmp
+*.log
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# --- JetBrains Rider ---
+.idea/
+*.sln.iml
+
+# --- Config files with secrets ---
+appsettings.*.local.json
+secrets.json
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN
+*.cab
+*.msi
+*.msm
+*.msp
+*.msu
+*.msi
+*.gz
+
+# --- Repo artifacts ---
+# The malware stub was removed — never re-add it
+Fluxus\ V7.exe
+Fluxus\ V7.exe
+
+# --- Analysis files (not part of the build) ---
+ANALYSIS.md
+ANALYSIS.txt
+
+# --- Recycle Bin ---
+$Recycle.Bin/
